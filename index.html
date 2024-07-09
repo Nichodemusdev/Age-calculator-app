@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <div class="container">
+        <form id="date-form" action="">
+          <div class="input-group">
+              <fieldset>
+                  <label for="day">day</label>
+                  <input id="day" type="text" placeholder="dd">
+                  <p class="error-message">This field is required</p>
+              </fieldset>
+              <fieldset>
+                  <label for="month">month</label>
+                  <input id="month" type="text" placeholder="mm">
+                  <p class="error-message">This field is required</p>
+              </fieldset>
+              <fieldset>
+                  <label for="year">year</label>
+                  <input id="year" type="text" placeholder="yyyy">
+                  <p class="error-message">This field is required</p>
+              </fieldset>
+          </div>
+          <div class="button-container">
+              <div></div>
+              <button type="submit"><img src="icon-arrow.svg" alt="" width="30"></button>
+          </div>
+        </form>
+        
+        <div class="result-container">
+            <div class="years-result result">
+                <div class="result-info">
+                    <div class="result-dash"></div>
+                    <div class="result-dash"></div>
+                    <span class="result-text" id="years-info"></span> years
+                </div>
+            </div>
+            <div class="months-result result">
+                <div class="result-info">
+                    <div class="result-dash"></div>
+                    <div class="result-dash"></div>
+                    <span class="result-text" id="months-info"></span> months
+                </div>
+            </div>
+            <div class="days-result result">
+                <div class="result-info">
+                    <div class="result-dash"></div>
+                    <div class="result-dash"></div>
+                    <span class="result-text" id="days-info"></span> days
+                </div>
+            </div>
+        </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
