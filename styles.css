@@ -145,7 +145,7 @@ button:active {
     display: inline-block;
 } 
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
     main {
         padding: 3%;
     }
